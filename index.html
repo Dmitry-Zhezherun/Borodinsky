@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+<meta charset="utf-8">
+<title>Барбершоп "Бородинский"</title>
+<link rel="stylesheet" type="text/css" href="barber.css"/>
+<link rel="stylesheet" href="css/normalize.css"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700|PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+
+
+
+
+<style type="text/css">
+
+body
+{
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+   font-family: "PT Sans Narrow", sans-serif;
+   font-weight: 900;
+  color: #f7f4f1;
+  background: #000 url('img/index-background.png');
+  min-width: 800px;
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: auto;
+  min-width: 960px;
+}
+
+
+</style>
+
+
+
+
+</head>
+
+<body>
+
+<div class="main_header">
+<div class="container clearfix">
+<nav class="main_navigation">
+<ul>
+
+<li class="active">
+<a href="#">Главная</a>
+</li>
+
+<li>
+<a href="#">Информация</a>
+</li>
+
+<li>
+<a href="#">Новости</a>
+</li>
+
+<li>
+<a href="#">Прайс-лист</a>
+</li>
+
+<li>
+<a href="#">Магазин</a>
+</li>
+
+<li>
+<a href="#">Контакты</a>
+</li>
+
+</ul>
+</nav>
+
+<div class="user_block">
+<a href="#" class="login">Вход</a>
+</div>
+</div>
+</div>
+
+<div class="main_container">
+  <div class="logo">
+    <img src="img/logo1.png" width="368" height="204" alt="Логотип Бородински">
+  </div>
+
+  <section class="features_row clearfix">
+
+    <div class="features_item">
+
+      <div class="features_title">Быстро</div>
+      <p>мы делаем свою работу быстро! два часа пролетят незаметно и вы
+         - счастливый обладатель стильной стрижки минутки!</p>
+       </div>
+
+       <div class="features_item">
+
+         <div class="features_title">Круто</div>
+       <p>забудьте, как вы стриглись раньше. мы сделаем из вас звезду
+          футбола или кино! во всяком случае внешне.</p>
+        </div>
+
+        <div class="features_item">
+
+          <div class="features_title">Дорого</div>
+          <p>наши мастера - профессионалы своего дела и не могут стоить дешево.
+             к тому же, разве цена не дает определенный статус?</p>
+           </div>
+
+         </section>
+
+      <div class="index_content clearfix">
+        <section class="content_column_left">
+          <h2 class="content_column_title">Новости</h2>
+
+          <ul class="news_preview">
+            <li>
+              Нам наконец завезли Ягермейстер! Теперь вы можете пропустить стаканчик
+              во время стрижки<br>
+              <time datetime="2013-09-25"> 25 сентября</time>
+            </li>
+            <li>
+              В нашей команде пополнение, Борис "Бритва" Стригунец, обладатель множества
+              титулов и наград пополнил наши стройные ряды.<br>
+              <time datetime="2013-09-19">19 сентября</time>
+            </li>
+          </ul>
+              <a href="#" class="btn">Все новости</a>
+            </section>
+
+
+            <section class="content_column_right">
+              <h2 class="content_column_title">Фотогалерея</h2>
+              <div class="gallery">
+                <figure class="gallery_content">
+                  <img src="img/gallery1.png" width="286" height="164" alt="">
+                </figure>
+                <button class="btn gallery_prev">Назад</button>
+                <button class="btn gallery_next">Вперед</button>
+              </div>
+            </section>
+          </div>
+
+
+          <div class="index_content clearfix">
+
+            <section class="content_column_left">
+
+              <div class="main_contacts">
+
+              <h2 class="content_column_title">контактная информация</h2>
+
+              <p>barbershop "borodinski"<br>
+                адрес:г.москва, ул.собаки павлова, д.13<br>
+                телефон: +7 (495) 666-02-666
+              </p>
+
+              <p class="schedule">
+                время работы:<br>
+                пн - пт: с 10:00 до 22:00<br>
+                сб - вс: с 10:00 до 19:00
+              </p>
+
+              <a href="#" class="btn route">как проехать</a>
+              <a href="#" class="btn feedback">обратная связь</a>
+
+            </div>
+
+          </section>
+
+
+          <section class="content_column_right">
+
+            <div class="appointment_form">
+
+              <h2 class="content_column_title">записаться</h2>
+
+              <p>укажите желаемую дату и время и мы свяжемся с вами для
+                подтверждения брони</p>
+
+                <form action="/echo" method="post">
+                  <input type="date" name="date" value="" placeholder="Дата" class="date">
+                  <input type="time" name="time" value="" placeholder="Время">
+                  <input type="text" name="name" value="" placeholder="Ваше имя" class="name">
+                  <input type="tel" name="phone" value="" placeholder="Телефон">
+                  <button type="submit" class="submit btn">Отправить</button>
+                </form>
+
+              </div>
+
+            </section>
+
+          </div>
+
+        </div>
+
+
+        <footer class="main_footer">
+
+          <div class="container_footer clearfix">
+
+            <section class="footer_contacts">
+              Барбершоп "Бородинский"<br>
+              адрес:г.москва, ул.собаки павлова, д.13<br>
+              телефон: +7 (495) 666-02-666
+            </section>
+
+            <section class="footer_social">
+              <p>давайте дружить!</p>
+              <a href="#" class="social_btn social_btn_vk">Вконтакте</a>
+              <a href="#" class="social_btn social_btn_fb">Фейсбук</a>
+              <a href="#" class="social_btn social_btn_inst">Инстаграм</a>
+            </section>
+
+            <section class="footer_copyright">
+              <p>дизайн сайта: </p>
+              <a href="https://vk.com/ormax" class="btn btn-copy">OrmaX</a>
+            </section>
+
+          </div>
+
+        </footer>
+
+        <div class="modal_content">
+          <div class="modal_content_close">
+            закрыть
+          </div>
+          <h2>личный кабинет</h2>
+          <p>введите пожалуйста свой логин и пароль</p>
+          <p>если вы забыли пароль</p>
+          <form action="/echo" method="post">
+            <input type="text" name="login" value="" placeholder="логин" class="form_login" required>
+            <input type="password" name="password" value="" placeholder="пароль" class="form_password" required>
+            <input type="checkbox" class="checkbox" id="remember_me">
+            <label for="remember_me">запомните меня</label>
+            <a href="#" class="restore">я забыл пароль!</a>
+            <button type="submit" class="btn">Войти</button>
+          </form>
+
+        </div>
+
+
+        <script type="text/javascript">
+        var popup = document.querySelector(".modal_content");
+        var link = document.querySelector(".login");
+        var close = document.querySelector(".modal_content_close");
+        console.log(link);
+        console.log(popup);
+        link.addEventListener("click", function(event){
+          popup.classList.add("modal_content_show");
+        });
+        close.addEventListener("click", function(event){
+          if(popup.classList.contains("modal_content_show")){
+            popup.classList.remove("modal_content_show");
+          };
+        })
+
+        </script>
+
+
+</body>
+
+</html>
